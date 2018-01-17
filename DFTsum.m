@@ -10,3 +10,5 @@ for n=0:(N-1)
         X(n+1) = X(n+1) + x(k+1)*exp(-i*2*pi*n*k/N);
     end;
 end;
+
+test;
