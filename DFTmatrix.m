@@ -1,9 +1,6 @@
-function X = DFTmatrix(x)
+function X = DFTmatrix(N)
 
-% Calculates the Discrete Fourier Transform and plots as a matrix.
-
-N = length(x);
-X = zeros(1,N);
+% Calculates the Discrete Fourier Transform matrix.
 
 for n=0:(N-1)
     for k=0:(N-1)
