@@ -3,7 +3,7 @@ clc;
 close all;
 
 n = [0:1:9];                    % Length of discrete points.
-n = 10;                         % For use ONLY on task 9!!!!!
+% n = 10;                         % For use ONLY on task 9!!!!!
 
 x = [1 0 0 0 0 0 0 0 0 0];      % Values for x.
 x2 = [1 1 1 1 1 1 1 1 1 1];     % Values for x2.
@@ -43,9 +43,9 @@ stem(abs(X))
 grid on                         
 ylabel('Magnitude')           
 xlabel('Discrete Points')      
-title('X3 DFT Matrix')         
-ylim([-1 7]);                 
-
+title('X3 DFT Matrix')   
+ylim([-1 7])
+             
 %% -- TASK 7 --
 % Randomly select a column from your DFT matrix A and extract it into vector a.
 
@@ -113,4 +113,3 @@ ylabel('Magnitude')             % ----------
 xlabel('Discrete Points')       % ----------
 title('AB Matrix IDFT')         % ----------
 ylim([-0.5 1]);                 % ----------
-
