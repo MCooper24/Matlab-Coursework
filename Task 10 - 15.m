@@ -8,7 +8,19 @@ clc;
 close all;
 
 N = 50;
-x = 1/2*(1-cos((2*pi*n)/(N-1)));
+n = 0:N;
+
+x = 1/2*(1-cos(2*pi*n/N));
+
+stem(n, x,'o-');
+stem(abs(x));
+grid on;
+xlabel('Discrete Points')
+ylabel('Magnitude')
+title('Hann Window Plot')
+hold on;
+X = DFTsum (x)
+stem(abs(X));
 
 %% -- TASK 11 --
-% 
+figure
