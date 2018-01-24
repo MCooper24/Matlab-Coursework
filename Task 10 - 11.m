@@ -23,4 +23,6 @@ X = DFTsum (x)
 stem(abs(X));
 
 %% -- TASK 11 --
-figure
+% Modify your DFT function "DFTsum()" into a new function "DFTsamples()" with syntax "[X,f] = DTFTsamples(x,fs)". 
+%
+% Equation can be found under file "DFTSamples.m".

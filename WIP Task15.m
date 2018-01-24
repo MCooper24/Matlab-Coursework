@@ -1,8 +1,6 @@
 [s,Fs] = audioread ('noisyhomer.wave')
 N = length(s);
-
 soundsc(s,Fs);
-
 figure(6)
 subplot(2,1,1)
 stem(s)
