@@ -1,5 +1,7 @@
 function [X,f] = DFTSamples (x,fs)
 
+% Modified DFTsamples function (question 13 only).
+
 N = length(x);
 X = DFTsum(x);
 

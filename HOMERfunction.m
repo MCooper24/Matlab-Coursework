@@ -1,5 +1,7 @@
 function P = HOMERfunction(x)
 
+% Signal power equation (question 15 only).
+
 N = length(x)
 P = 0;
 

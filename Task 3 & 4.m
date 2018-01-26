@@ -18,7 +18,7 @@ grid on                         % Apply a grid.
 ylabel('Magnitude')             % Label the Y-axis.
 xlabel('Discrete Points')       % Label the X-axis.
 title('X IDFT')                 % Give the graph a title.
-ylim([-0.1 2]);                 % Set the parameters for the Y-axis.
+ylim([-0.1 1]);                 % Set the parameters for the Y-axis.
 
 % X2 IDFT Equivalent.
 X = IDFTsum(x2)                 % Call the DFTsum.
@@ -27,7 +27,7 @@ grid on                         % Apply a grid.
 ylabel('Magnitude')             % Label the Y-axis.
 xlabel('Discrete Points')       % Label the X-axis.
 title('X2 IDFT')                % Give the graph a title.
-ylim([-1 2]);                   % Set the parameters for the Y-axis.
+ylim([-1 1.5]);                 % Set the parameters for the Y-axis.
 
 % X3 IDFT Equivalent.
 X = IDFTsum(x3)                 % Call the DFTsum.
@@ -36,4 +36,4 @@ grid on                         % Apply a grid.
 ylabel('Magnitude')             % Label the Y-axis.
 xlabel('Discrete Points')       % Label the X-axis.
 title('X3 IDFT');               % Give the graph a title.
-ylim([-1 3]);                   % Set the parameters for the Y-axis.
+ylim([-1 1.5]);                 % Set the parameters for the Y-axis.
