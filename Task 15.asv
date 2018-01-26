@@ -34,7 +34,5 @@ ylabel('Amplitude');                    % Give the y-axis a label.
 title('Clean Homer Signal');            % Give the graph a title.
 
 % MATHS
-Pnoise = power(s1);
-Psig = power(s2);
+Pnoise = Power(s);
 
-SNR = 10*log10(Psig/Pnoise);

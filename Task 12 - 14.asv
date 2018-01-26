@@ -64,7 +64,7 @@ soundsc(abs(X));                        % Play the changed audio file.
 % the spectrum where interference occurs, although oddly, the faster method
 % does result in the points having a 1000Hz exact delay.
 
-%% -- TASK 14 --
+%% -- TASK 14 (WIP) --
 % Remove the interference component from the "nspeech1" signal by simple 
 % modification of its spectrum. This can be achieved by setting the 
 % magnitude value at the identified frequency to zero or some very low value.
@@ -87,7 +87,7 @@ ylabel('Magnitude');                    % Give the y-axis a label.
 title('DFT Transform (Fast Method)');   % Give the generated graph a title.
 soundsc(abs(Z));    
 
-% REMOVED FREQUENCIES
+% REMOVING FREQUENCIES
 Z(2749)= 0;
 Z(2750)= 0;
 Z(2751)= 0;
@@ -99,6 +99,7 @@ Z(2756)= 0;
 Z(2757)= 0;
 Z(2758)= 0;
 Z(2759)= 0;
+
 Z(10316)= 0;
 Z(10315)= 0;
 Z(10314)= 0;
@@ -118,9 +119,8 @@ Z(10303)= 0;
 f = round(f);                           % Round the frequency values to the nearest Hz.
 stem(abs(Z));                           % Interpret the results onto a stem graph.
 grid on;                                % Apply a grid.
-xlabel('Time (ms)');                    % Give the x-axis a title.
-ylabel('Magnitude');                    % Give the y-axis a title.
-title('Removed Frequencies');
+xlabel('Time (ms)');                           % Give the x-axis a title.
+ylabel('NA');                           % Give the y-axis a title.
 soundsc(abs(Z));                        % Play the modified sound file.
 
 % IFFT REBERSAL
@@ -129,5 +129,4 @@ stem(abs(Y));
 grid on;
 xlabel('Time (ms)');
 ylabel('Magnitude');
-title('Inversed Results');
 soundsc(abs(Y));
