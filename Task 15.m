@@ -34,7 +34,7 @@ ylabel('Amplitude');                    % Give the y-axis a label.
 title('Clean Homer Signal');            % Give the graph a title.
 
 % MATHS
-A = HOMERfunction(s1);                  % Declare what A is equal to.
-B = HOMERfunction(s2);                  % Declare what B is equal to.
+A = HOMERfunction(s1);                  % Noisy Funtion.
+B = HOMERfunction(s2);                  % Clean function.
 
-SNR = 10*log10(A/B);                    % SNR equation.
+SNR = 10*log10(B/A);                    % SNR equation.

@@ -3,6 +3,7 @@ clc;
 close all;
 
 n = [0:1:9];                    % Length of discrete points.
+n = 10;                         % For use ONLY on this task!!!!!
 
 x = [1 0 0 0 0 0 0 0 0 0];      % Values for x.
 x2 = [1 1 1 1 1 1 1 1 1 1];     % Values for x2.
@@ -103,8 +104,6 @@ ylim([-0.5 1]);                 % ----------
 % Compute the matrices A and B for N = 10. Then compute the matrix product 
 % C = AB and display it. 
 % Is the result as you expected?
-
-n = 10;                         % For use ONLY on this task!!!!!
 
 C = A*B;                        % The sum is equal to A x B.
 stem(abs(X))                    % ----------

@@ -36,4 +36,4 @@ grid on                         % Apply a grid.
 ylabel('Magnitude')             % Label the Y-axis.
 xlabel('Discrete Points')       % Label the X-axis.
 title('X3 IDFT');               % Give the graph a title.
-ylim([-1 1.5]);                 % Set the parameters for the Y-axis.
+ylim([-0.5 1.5]);               % Set the parameters for the Y-axis.
